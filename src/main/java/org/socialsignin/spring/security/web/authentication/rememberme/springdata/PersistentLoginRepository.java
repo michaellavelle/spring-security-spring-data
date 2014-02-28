@@ -18,6 +18,7 @@ import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.NoRepositoryBean;
+import org.springframework.data.repository.query.Param;
 
 /**
  * Interface for provider specific spring-data repositories for persistent logins
@@ -28,5 +29,5 @@ import org.springframework.data.repository.NoRepositoryBean;
 public interface PersistentLoginRepository<T extends PersistentLogin> extends
 		CrudRepository<T, String> {
 
-	public List<T> findByUsername(String username);
+	public List<T> findByUsername(@Param("username") String username);
 }
