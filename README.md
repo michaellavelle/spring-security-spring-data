@@ -5,5 +5,5 @@ Base project for implementions of Spring Security persistence components using S
 
 Current implementations:
 
-    DynamoDB : https://github.com/michaellavelle/spring-security-spring-data-dynamodb
+DynamoDB : https://github.com/michaellavelle/spring-security-spring-data-dynamodb
 
